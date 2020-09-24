@@ -32,8 +32,8 @@
     transition-duration: 8s;
     transition-property: width;
     display: flex;
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
 }
 
 .one {
@@ -74,6 +74,6 @@
 
 @media screen and (max-width: 768px) {
     .grid2:hover .skill {
-        width: 500px;
+        width: 75px;
     }
 }
