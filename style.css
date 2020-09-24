@@ -130,7 +130,7 @@ h4 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  min-height: 90vh;
+  min-height: 100vh;
   border: 8px solid black;
   border-style: groove;
   padding-bottom: 50px;
@@ -195,8 +195,8 @@ h4 {
 
 @media screen and (max-width: 768px) {
   .skill {
-    width: 40px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     -webkit-transition-duration: 8s;
             transition-duration: 8s;
     -webkit-transition-property: width;
