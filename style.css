@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+.grid-projects {
+  background: radial-gradient(#525252, #131313);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  font-family: museo-sans, Helvetica, sans-serif;
+  min-height: 80vh;
+  grid-gap: 3rem;
+}
+
+.projects-p {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  background: radial-gradient(#525252, #131313);
+  margin: auto;
+  font-size: 50px;
+  font-family: 'Bangers', cursive;
+  padding-top: 70px;
+  color: white;
+}
+
+.grid-projects ul {
+  list-style: none;
+  margin: 0;
+  font-size: 16px;
+  line-height: 23px;
+  padding-bottom: 15px;
+}
+
+ul {
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+.grid-projects li {
+  width: 20%;
+  float: left;
+  margin: 2%;
+  background: #fff;
+}
+
+.grid-projects a {
+  border: 1px solid #000000;
+  display: block;
+  background: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-projects img {
+  width: 100%;
+}
+
+img {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+h4 {
+  color: #000000;
+  font-family: museo-sans, Helvetica, sans-serif;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+}
+
+.grid-projects h4 {
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  min-height: 8vh;
+  background: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-layout3 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-projects h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-projects li {
+    width: 80%;
+    margin-left: 40px;
+  }
+}
+
+.grid-layout2 {
+  background-image: url(./napoleon-dynamite-wallpaper-generator.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 90vh;
+  border: 8px solid black;
+  border-style: groove;
+  padding-bottom: 50px;
+  background-color: #202020;
+}
+
+.grid2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.grid2:hover .skill {
+  width: 200px;
+}
+
+.skill {
+  -webkit-transition-duration: 8s;
+          transition-duration: 8s;
+  -webkit-transition-property: width;
+  transition-property: width;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 110px;
+  height: 110px;
+}
+
+.one {
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .tech p {
+    font-size: 16px;
+    word-spacing: 2px;
+    font-weight: bold;
+    letter-spacing: 0rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-layout2 {
+    overflow: hidden;
+    background-size: 500px 400px;
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skill {
+    width: 40px;
+    height: 50px;
+    -webkit-transition-duration: 8s;
+            transition-duration: 8s;
+    -webkit-transition-property: width;
+    transition-property: width;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid2:hover .skill {
+    width: 500px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#hero {
+  background: #e9ebee;
+}
+
+body {
+  min-height: 90vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  min-height: 5vh;
+  background: #313233;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .bio {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-family: 'Bangers', cursive;
+}
+
+.nav-list {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list li a {
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  color: white;
+  font-family: 'Bangers', cursive;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 5px;
+  margin: 5px;
+  background-color: white;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+
+.grid-layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.5fr 1.5fr;
+      grid-template-columns: 2.5fr 1.5fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 90vh;
+}
+
+.grid-layout .desk {
+  width: 100%;
+  height: auto;
+}
+
+.grid-layout .desk #hero div {
+  max-width: 100%;
+  min-height: 100px;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  display: block;
+}
+
+.grid {
+  margin: auto;
+}
+
+.grid p {
+  font-size: 25px;
+  word-spacing: 3px;
+  letter-spacing: 0.2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  padding-bottom: 2px;
+  border: 2px solid black;
+  -webkit-box-shadow: 10px 10px 5px grey;
+          box-shadow: 10px 10px 5px grey;
+  width: 90%;
+  height: 100%;
+  background: #1970b8;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding: 15px;
+}
+
+.hero-p {
+  color: #f0e6e6;
+}
+
+/*Quote*/
+section {
+  display: block;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+#quote {
+  background: #000;
+  text-align: center;
+}
+
+#quote blockquote {
+  font-size: 25px;
+  line-height: 25px;
+  padding: 30px 20px 50px;
+  max-width: 650px;
+  min-height: auto;
+  margin: 0 auto;
+  color: #fff;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  border: 0;
+  font: inherit;
+}
+
+#quote blockquote cite {
+  margin-top: 50px;
+  display: block;
+  font-style: italic;
+}
+
+#quote blockquote cite::before {
+  content: '-';
+}
+
+@media screen and (max-width: 768px) {
+  .grid-layout {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  .grid p {
+    font-size: 16px;
+    word-spacing: 2px;
+    font-weight: bold;
+    letter-spacing: 0rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 2px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .layout {
+    display: block;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    right: 0px;
+    height: 70vh;
+    top: 8vh;
+    background-color: #313233;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .nav-list li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  @-webkit-keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg translate(-5px, 6px));
+          transform: rotate(-45deg translate(-5px, 6px));
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-list {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

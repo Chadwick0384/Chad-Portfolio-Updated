@@ -1,0 +1,79 @@
+.grid-layout2 {
+    background-image: url(./napoleon-dynamite-wallpaper-generator.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 90vh;
+    border: 8px solid black;
+    border-style: groove;
+    padding-bottom: 50px;
+    background-color: rgb(32, 32, 32);
+}
+
+
+
+
+.grid2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.grid2:hover .skill {
+    width: 200px;
+}
+
+
+.skill {
+    transition-duration: 8s;
+    transition-property: width;
+    display: flex;
+    width: 110px;
+    height: 110px;
+}
+
+.one {
+    transition-timing-function: ease-in;
+}
+
+
+//mobile
+@media screen and (max-width: 768px) {
+    .tech p {
+        font-size: 16px;
+        word-spacing: 2px;
+        font-weight: bold;
+        letter-spacing: 0rem;
+        line-height: 1.8rem;
+        text-align: center;
+        padding: 2px;     
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-layout2 {
+        overflow: hidden;
+        background-size: 500px 400px;
+        min-height: 50vh;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .skill {
+            width: 40px;
+            height: 50px;
+            transition-duration: 8s;
+            transition-property: width;
+            display: flex;
+        }
+    }
+
+@media screen and (max-width: 768px) {
+    .grid2:hover .skill {
+        width: 500px;
+    }
+}
