@@ -84,10 +84,6 @@ h4 {
   font-size: 30px;
 }
 
-.grid-projects h4:hover {
-  background-color: #1c62cc;
-}
-
 .grid-projects h4 {
   font-size: 25px;
   font-weight: bold;
@@ -130,12 +126,12 @@ h4 {
 }
 
 .grid-layout2 {
-  background-image: url(./napoleon-dynamite-wallpaper-generator.jpg);
+  background-image: url(./napoleon-dynamite-wallpaper-generator.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  min-height: 90vh;
+  min-height: 100vh;
   border: 8px solid black;
   border-style: groove;
   background-color: #202020;
@@ -145,31 +141,30 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-content: center;
   width: 100%;
   margin-top: 250px;
 }
 
 .grid2:hover .skill {
-  width: 200px;
+  width: 150px;
 }
 
 .skill {
-  -webkit-transition-duration: 8s;
-          transition-duration: 8s;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
   -webkit-transition-property: width;
   transition-property: width;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .one {
@@ -180,9 +175,9 @@ h4 {
 @media screen and (max-width: 768px) {
   .grid-layout2 {
     background-size: 100% 100%;
-    background-position: center center;
+    background-position: center;
     background-attachment: scroll;
-    height: 90vh;
+    height: 70vh;
   }
 }
 
