@@ -1,3 +1,4 @@
+//Tech Skills Section
 .grid-layout2 {
     background-image: url(./napoleon-dynamite-wallpaper-generator.png);
     background-size: 100% 100%;
@@ -15,28 +16,32 @@
 
 .grid2 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 250px;
+    margin-top: 180px;
 }
 
 .grid2:hover .skill {
-    width: 150px;
+    width: 120px;
 }
 
 
 .skill {
-    transition-duration: 3s;
+    transition-duration: 7s;
     transition-property: width;
     display: flex;
-    width: 80px;
-    height:80px;
+    width: 70px;
+    height:70px;
+  
 }
+
+
 
 .one {
     transition-timing-function: ease-in;
 }
+
 
 
 //mobile

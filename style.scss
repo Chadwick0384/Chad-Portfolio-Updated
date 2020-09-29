@@ -22,7 +22,7 @@ body {
 
 
 header {
-    min-height: 5vh;
+    min-height: 4vh;
     background: rgb(49, 50, 51);
     nav {
     display: flex;
@@ -55,7 +55,6 @@ header {
             font-size: 17px;
             color: white;
             font-family: 'Bangers', cursive;
-
         }
     }
 }
@@ -96,6 +95,7 @@ a:hover {
     .desk {
         width: 100%;
         height: auto;
+        animation: fadeIn ease 8s;
 
     #hero div {
         max-width: 100%;
@@ -124,12 +124,18 @@ a:hover {
         background: #1970b8;
         font-family: 'Pathway Gothic One', sans-serif;
         padding: 15px;
-
+        
     }
 }
 
 .hero-p {
     color: rgb(240, 230, 230);
+    animation: fadeIn ease 12s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 
