@@ -101,6 +101,30 @@ a:hover {
         } 
     }
 
+    .grid {
+        margin: auto;
+        p {
+            font-size: 25px;
+            word-spacing: 3px;
+            letter-spacing: 0.2rem;
+            line-height: 2.5rem;
+            text-align: center;
+            padding-bottom: 2px;
+            border: 2px solid black;
+            box-shadow: 10px 10px 5px grey;
+            width: 80%;
+            height: 100%;
+            background: #1970b8;
+            font-family: 'Pathway Gothic One', sans-serif;
+            padding: 15px;
+            
+        }
+    }
+    
+    .hero-p {
+        color: rgb(240, 230, 230);
+    }
+
 
 
 //SVG animations    
@@ -110,7 +134,7 @@ a:hover {
 }
 
 #details {
-    animation: sparkle 20s ease-in infinite;
+    animation: sparkle 15s ease-in;
     transform-origin: center;
 }
 
@@ -134,35 +158,7 @@ a:hover {
     }
 }
 
-.grid {
-    margin: auto;
-    p {
-        font-size: 25px;
-        word-spacing: 3px;
-        letter-spacing: 0.2rem;
-        line-height: 2.5rem;
-        text-align: center;
-        padding-bottom: 2px;
-        border: 2px solid black;
-        box-shadow: 10px 10px 5px grey;
-        width: 80%;
-        height: 100%;
-        background: #1970b8;
-        font-family: 'Pathway Gothic One', sans-serif;
-        padding: 15px;
-        
-    }
-}
 
-.hero-p {
-    color: rgb(240, 230, 230);
-    animation: fadeIn ease 12s;
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
 
 
 /*Quote*/

@@ -172,8 +172,8 @@ h4 {
   display: flex;
   width: 70px;
   height: 70px;
-  -webkit-animation: wheel 25s ease;
-          animation: wheel 25s ease;
+  -webkit-animation: wheel 60s ease;
+          animation: wheel 60s ease;
 }
 
 @-webkit-keyframes wheel {
@@ -341,6 +341,31 @@ a:hover {
   display: block;
 }
 
+.grid {
+  margin: auto;
+}
+
+.grid p {
+  font-size: 25px;
+  word-spacing: 3px;
+  letter-spacing: 0.2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  padding-bottom: 2px;
+  border: 2px solid black;
+  -webkit-box-shadow: 10px 10px 5px grey;
+          box-shadow: 10px 10px 5px grey;
+  width: 80%;
+  height: 100%;
+  background: #1970b8;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding: 15px;
+}
+
+.hero-p {
+  color: #f0e6e6;
+}
+
 #Left {
   -webkit-animation: typing 4s ease infinite;
           animation: typing 4s ease infinite;
@@ -349,8 +374,8 @@ a:hover {
 }
 
 #details {
-  -webkit-animation: sparkle 20s ease-in infinite;
-          animation: sparkle 20s ease-in infinite;
+  -webkit-animation: sparkle 15s ease-in;
+          animation: sparkle 15s ease-in;
   -webkit-transform-origin: center;
           transform-origin: center;
 }
@@ -396,51 +421,6 @@ a:hover {
   to {
     -webkit-transform: rotateZ(-10deg);
             transform: rotateZ(-10deg);
-  }
-}
-
-.grid {
-  margin: auto;
-}
-
-.grid p {
-  font-size: 25px;
-  word-spacing: 3px;
-  letter-spacing: 0.2rem;
-  line-height: 2.5rem;
-  text-align: center;
-  padding-bottom: 2px;
-  border: 2px solid black;
-  -webkit-box-shadow: 10px 10px 5px grey;
-          box-shadow: 10px 10px 5px grey;
-  width: 80%;
-  height: 100%;
-  background: #1970b8;
-  font-family: 'Pathway Gothic One', sans-serif;
-  padding: 15px;
-}
-
-.hero-p {
-  color: #f0e6e6;
-  -webkit-animation: fadeIn ease 12s;
-          animation: fadeIn ease 12s;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
