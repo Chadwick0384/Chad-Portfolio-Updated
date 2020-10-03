@@ -87,15 +87,9 @@ a:hover {
 //Main body
 .grid-layout {
     display: grid;
-    grid-template-columns: 2.5fr 1.5fr;
-    grid-template-rows: auto;
+    grid-template-columns: 2.5fr 3.0fr;
     justify-content: center;
-    min-height: 90vh;
-
-    .desk {
-        width: 100%;
-        height: auto;
-        animation: fadeIn ease 8s;
+    min-height: 100vh;
 
     #hero div {
         max-width: 100%;
@@ -105,6 +99,38 @@ a:hover {
         font: inherit;
         display: block; 
         } 
+    }
+
+
+
+//SVG animations    
+#Left {
+    animation: typing 4s ease infinite;
+    transform-origin: center;
+}
+
+#details {
+    animation: sparkle 20s ease-in infinite;
+    transform-origin: center;
+}
+
+
+@keyframes sparkle {
+    from {
+        transform: scale(.3);
+    }
+    to{
+        transform: width(1.5);
+    }
+}
+
+
+@keyframes typing {
+    from {
+        transform: rotateZ(5deg);
+    }
+    to{
+        transform: rotateZ(-10deg);
     }
 }
 
@@ -119,7 +145,7 @@ a:hover {
         padding-bottom: 2px;
         border: 2px solid black;
         box-shadow: 10px 10px 5px grey;
-        width: 90%;
+        width: 80%;
         height: 100%;
         background: #1970b8;
         font-family: 'Pathway Gothic One', sans-serif;
@@ -188,27 +214,19 @@ blockquote {
 @media screen and (max-width: 768px) {
     .grid-layout {
         grid-template-columns: 1fr;
-        grid-gap: 2rem;
+        grid-gap: 1rem;
     }
     .grid p {
-        font-size: 16px;
-        word-spacing: 2px;
+        font-size: 14px;
+        word-spacing: 1.5px;
         font-weight: bold;
-        letter-spacing: 0rem;
         line-height: 1.8rem;
         text-align: center;
-        padding: 2px;
-        margin-left: 20px;
-        margin-bottom: 70px;
-    }
-    .layout {
-        display: block;
-        max-width: 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        min-height: 30vh;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 5px;
+        margin-bottom: 700px;
+        margin: auto;
+        margin-bottom: 60px;
+        width: 50%;
     }
     body {
         overflow-x: hidden;

@@ -148,9 +148,9 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -172,6 +172,30 @@ h4 {
   display: flex;
   width: 70px;
   height: 70px;
+  -webkit-animation: wheel 25s ease;
+          animation: wheel 25s ease;
+}
+
+@-webkit-keyframes wheel {
+  from {
+    -webkit-transform: rotatez(0deg);
+            transform: rotatez(0deg);
+  }
+  to {
+    -webkit-transform: rotatez(360deg);
+            transform: rotatez(360deg);
+  }
+}
+
+@keyframes wheel {
+  from {
+    -webkit-transform: rotatez(0deg);
+            transform: rotatez(0deg);
+  }
+  to {
+    -webkit-transform: rotatez(360deg);
+            transform: rotatez(360deg);
+  }
 }
 
 .one {
@@ -300,30 +324,79 @@ a:hover {
 .grid-layout {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2.5fr 1.5fr;
-      grid-template-columns: 2.5fr 1.5fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-columns: 2.5fr 3.0fr;
+      grid-template-columns: 2.5fr 3.0fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
-.grid-layout .desk {
-  width: 100%;
-  height: auto;
-  -webkit-animation: fadeIn ease 8s;
-          animation: fadeIn ease 8s;
-}
-
-.grid-layout .desk #hero div {
+.grid-layout #hero div {
   max-width: 100%;
   min-height: 100px;
   padding: 0;
   border: 0;
   font: inherit;
   display: block;
+}
+
+#Left {
+  -webkit-animation: typing 4s ease infinite;
+          animation: typing 4s ease infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#details {
+  -webkit-animation: sparkle 20s ease-in infinite;
+          animation: sparkle 20s ease-in infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes sparkle {
+  from {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  to {
+    -webkit-transform: width(1.5);
+            transform: width(1.5);
+  }
+}
+
+@keyframes sparkle {
+  from {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  to {
+    -webkit-transform: width(1.5);
+            transform: width(1.5);
+  }
+}
+
+@-webkit-keyframes typing {
+  from {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-10deg);
+            transform: rotateZ(-10deg);
+  }
+}
+
+@keyframes typing {
+  from {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-10deg);
+            transform: rotateZ(-10deg);
+  }
 }
 
 .grid {
@@ -340,7 +413,7 @@ a:hover {
   border: 2px solid black;
   -webkit-box-shadow: 10px 10px 5px grey;
           box-shadow: 10px 10px 5px grey;
-  width: 90%;
+  width: 80%;
   height: 100%;
   background: #1970b8;
   font-family: 'Pathway Gothic One', sans-serif;
@@ -417,27 +490,19 @@ blockquote {
   .grid-layout {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
   .grid p {
-    font-size: 16px;
-    word-spacing: 2px;
+    font-size: 14px;
+    word-spacing: 1.5px;
     font-weight: bold;
-    letter-spacing: 0rem;
     line-height: 1.8rem;
     text-align: center;
-    padding: 2px;
-    margin-left: 20px;
-    margin-bottom: 70px;
-  }
-  .layout {
-    display: block;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 30vh;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 5px;
+    margin-bottom: 700px;
+    margin: auto;
+    margin-bottom: 60px;
+    width: 50%;
   }
   body {
     overflow-x: hidden;
