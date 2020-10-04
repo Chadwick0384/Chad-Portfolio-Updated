@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./projects";
 @import "./techskills";
+@import "./animation";
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
@@ -124,41 +125,6 @@ a:hover {
     .hero-p {
         color: rgb(240, 230, 230);
     }
-
-
-
-//SVG animations    
-#Left {
-    animation: typing 4s ease infinite;
-    transform-origin: center;
-}
-
-#details {
-    animation: sparkle 15s ease-in;
-    transform-origin: center;
-}
-
-
-@keyframes sparkle {
-    from {
-        transform: scale(.3);
-    }
-    to{
-        transform: width(1.5);
-    }
-}
-
-
-@keyframes typing {
-    from {
-        transform: rotateZ(5deg);
-    }
-    to{
-        transform: rotateZ(-10deg);
-    }
-}
-
-
 
 
 /*Quote*/

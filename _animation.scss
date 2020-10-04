@@ -1,0 +1,43 @@
+//SVG animations    
+#Left {
+    animation: typing 4s ease infinite;
+    transform-origin: center;
+}
+
+#details {
+    animation: sparkle 6s ease-in;
+    transform-origin: center;
+}
+
+#torso {
+    animation: lean 4s ease infinite;
+    transform-origin: center;
+}
+
+
+@keyframes sparkle {
+    from {
+        transform: scale(.3);
+    }
+    to{
+        transform: width(1.5);
+    }
+}
+
+@keyframes lean {
+    from {
+        transform: rotateZ(2deg);
+    }
+    to{
+        transform: rotateZ(-1.5deg);
+    }
+}
+
+@keyframes typing {
+    from {
+        transform: rotateZ(5deg);
+    }
+    to{
+        transform: rotateZ(-10deg);
+    }
+}

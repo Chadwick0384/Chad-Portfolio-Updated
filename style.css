@@ -232,6 +232,93 @@ h4 {
   }
 }
 
+#Left {
+  -webkit-animation: typing 4s ease infinite;
+          animation: typing 4s ease infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#details {
+  -webkit-animation: sparkle 6s ease-in;
+          animation: sparkle 6s ease-in;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#torso {
+  -webkit-animation: lean 4s ease infinite;
+          animation: lean 4s ease infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes sparkle {
+  from {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  to {
+    -webkit-transform: width(1.5);
+            transform: width(1.5);
+  }
+}
+
+@keyframes sparkle {
+  from {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  to {
+    -webkit-transform: width(1.5);
+            transform: width(1.5);
+  }
+}
+
+@-webkit-keyframes lean {
+  from {
+    -webkit-transform: rotateZ(2deg);
+            transform: rotateZ(2deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+}
+
+@keyframes lean {
+  from {
+    -webkit-transform: rotateZ(2deg);
+            transform: rotateZ(2deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+}
+
+@-webkit-keyframes typing {
+  from {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-11deg);
+            transform: rotateZ(-11deg);
+  }
+}
+
+@keyframes typing {
+  from {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+  to {
+    -webkit-transform: rotateZ(-11deg);
+            transform: rotateZ(-11deg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -364,64 +451,6 @@ a:hover {
 
 .hero-p {
   color: #f0e6e6;
-}
-
-#Left {
-  -webkit-animation: typing 4s ease infinite;
-          animation: typing 4s ease infinite;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-}
-
-#details {
-  -webkit-animation: sparkle 15s ease-in;
-          animation: sparkle 15s ease-in;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-}
-
-@-webkit-keyframes sparkle {
-  from {
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
-  }
-  to {
-    -webkit-transform: width(1.5);
-            transform: width(1.5);
-  }
-}
-
-@keyframes sparkle {
-  from {
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
-  }
-  to {
-    -webkit-transform: width(1.5);
-            transform: width(1.5);
-  }
-}
-
-@-webkit-keyframes typing {
-  from {
-    -webkit-transform: rotateZ(5deg);
-            transform: rotateZ(5deg);
-  }
-  to {
-    -webkit-transform: rotateZ(-10deg);
-            transform: rotateZ(-10deg);
-  }
-}
-
-@keyframes typing {
-  from {
-    -webkit-transform: rotateZ(5deg);
-            transform: rotateZ(5deg);
-  }
-  to {
-    -webkit-transform: rotateZ(-10deg);
-            transform: rotateZ(-10deg);
-  }
 }
 
 /*Quote*/
