@@ -213,6 +213,7 @@ h4 {
           animation: typing 5s ease infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
+  animation-direction: alternate-reverse;
 }
 
 #details {
@@ -227,6 +228,7 @@ h4 {
           animation: lean 5s ease infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
+  animation-direction: alternate-reverse;
 }
 
 #head {
@@ -234,13 +236,7 @@ h4 {
           animation: lean 5s ease infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
-}
-
-#rightarm {
-  -webkit-animation: lean 5s ease infinite;
-          animation: lean 5s ease infinite;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  animation-direction: alternate-reverse;
 }
 
 @-webkit-keyframes turn {
