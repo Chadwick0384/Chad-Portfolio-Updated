@@ -172,30 +172,6 @@ h4 {
   display: flex;
   width: 70px;
   height: 70px;
-  -webkit-animation: wheel 60s ease;
-          animation: wheel 60s ease;
-}
-
-@-webkit-keyframes wheel {
-  from {
-    -webkit-transform: rotatez(0deg);
-            transform: rotatez(0deg);
-  }
-  to {
-    -webkit-transform: rotatez(360deg);
-            transform: rotatez(360deg);
-  }
-}
-
-@keyframes wheel {
-  from {
-    -webkit-transform: rotatez(0deg);
-            transform: rotatez(0deg);
-  }
-  to {
-    -webkit-transform: rotatez(360deg);
-            transform: rotatez(360deg);
-  }
 }
 
 .one {
@@ -233,24 +209,60 @@ h4 {
 }
 
 #Left {
-  -webkit-animation: typing 4s ease infinite;
-          animation: typing 4s ease infinite;
+  -webkit-animation: typing 5s ease infinite;
+          animation: typing 5s ease infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
 }
 
 #details {
-  -webkit-animation: sparkle 6s ease-in;
-          animation: sparkle 6s ease-in;
+  -webkit-animation: sparkle 3s ease-in;
+          animation: sparkle 3s ease-in;
   -webkit-transform-origin: center;
           transform-origin: center;
 }
 
 #torso {
-  -webkit-animation: lean 4s ease infinite;
-          animation: lean 4s ease infinite;
+  -webkit-animation: lean 5s ease infinite;
+          animation: lean 5s ease infinite;
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+
+#head {
+  -webkit-animation: lean 5s ease infinite;
+          animation: lean 5s ease infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#rightarm {
+  -webkit-animation: lean 5s ease infinite;
+          animation: lean 5s ease infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes turn {
+  from {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  to {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
+}
+
+@keyframes turn {
+  from {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  to {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
 }
 
 @-webkit-keyframes sparkle {
@@ -277,23 +289,23 @@ h4 {
 
 @-webkit-keyframes lean {
   from {
-    -webkit-transform: rotateZ(2deg);
-            transform: rotateZ(2deg);
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
   }
   to {
-    -webkit-transform: rotateZ(-1deg);
-            transform: rotateZ(-1deg);
+    -webkit-transform: rotateZ(-5.5deg);
+            transform: rotateZ(-5.5deg);
   }
 }
 
 @keyframes lean {
   from {
-    -webkit-transform: rotateZ(2deg);
-            transform: rotateZ(2deg);
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
   }
   to {
-    -webkit-transform: rotateZ(-1deg);
-            transform: rotateZ(-1deg);
+    -webkit-transform: rotateZ(-5.5deg);
+            transform: rotateZ(-5.5deg);
   }
 }
 
@@ -303,8 +315,8 @@ h4 {
             transform: rotateZ(5deg);
   }
   to {
-    -webkit-transform: rotateZ(-11deg);
-            transform: rotateZ(-11deg);
+    -webkit-transform: rotateZ(-16.5deg);
+            transform: rotateZ(-16.5deg);
   }
 }
 
@@ -314,8 +326,8 @@ h4 {
             transform: rotateZ(5deg);
   }
   to {
-    -webkit-transform: rotateZ(-11deg);
-            transform: rotateZ(-11deg);
+    -webkit-transform: rotateZ(-16.5deg);
+            transform: rotateZ(-16.5deg);
   }
 }
 
