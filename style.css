@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
 .grid-projects {
-  background: #e9ebee;
+  background: white;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
@@ -23,7 +23,7 @@
 
 h1 {
   text-align: center;
-  background: #e9ebee;
+  background: white;
   margin: auto;
   font-size: 50px;
   font-family: 'Bangers', cursive;
@@ -137,10 +137,9 @@ h4 {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: center;
   min-height: 80vh;
-  border: 8px solid black;
-  border-style: groove;
+  border: 1px solid black;
   background-color: #202020;
 }
 
@@ -155,7 +154,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-top: 180px;
+  margin-top: 250px;
 }
 
 .skill {
