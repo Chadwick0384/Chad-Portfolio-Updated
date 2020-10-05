@@ -158,25 +158,12 @@ h4 {
   margin-top: 180px;
 }
 
-.grid2:hover .skill {
-  width: 120px;
-}
-
 .skill {
-  -webkit-transition-duration: 7s;
-          transition-duration: 7s;
-  -webkit-transition-property: width;
-  transition-property: width;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70px;
-  height: 70px;
-}
-
-.one {
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -192,19 +179,9 @@ h4 {
   .skill {
     width: 40px;
     height: 40px;
-    -webkit-transition-duration: 8s;
-            transition-duration: 8s;
-    -webkit-transition-property: width;
-    transition-property: width;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .grid2:hover .skill {
-    width: 55px;
   }
 }
 

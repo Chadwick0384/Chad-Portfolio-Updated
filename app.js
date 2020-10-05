@@ -24,6 +24,9 @@ const navSlide = () => {
 
 navSlide();
 
+AOS.init({
+    duration: 1200,
+  })
 
 
 

@@ -22,21 +22,11 @@
     margin-top: 180px;
 }
 
-.grid2:hover .skill {
-    width: 120px;
-}
-
 
 .skill {
-    transition-duration: 7s;
-    transition-property: width;
     display: flex;
-    width: 70px;
-    height:70px;
-}
-
-.one {
-    transition-timing-function: ease-in;
+    width: 100px;
+    height: 100px;
 }
 
 
@@ -55,14 +45,7 @@
         .skill {
             width: 40px;
             height: 40px;
-            transition-duration: 8s;
-            transition-property: width;
             display: flex;
         }
     }
 
-@media screen and (max-width: 768px) {
-    .grid2:hover .skill {
-        width: 55px;
-    }
-}
