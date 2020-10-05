@@ -1,6 +1,6 @@
 //SVG animations    
 #Left {
-    animation: typing 5s ease infinite;
+    animation: typing 3s ease infinite;
     transform-origin: center;
     animation-direction: alternate-reverse;
 }
@@ -11,13 +11,13 @@
 }
 
 #torso {
-    animation: lean 5s ease infinite;
+    animation: lean 3s ease infinite;
     transform-origin: center;
     animation-direction: alternate-reverse;
 }
 
 #head {
-    animation: lean 5s ease infinite;
+    animation: lean 3s ease infinite;
     transform-origin: center;
     animation-direction: alternate-reverse;
 }
@@ -29,7 +29,7 @@
         transform: rotateZ(0);
     }
     to{
-        transform: rotateZ(10deg);
+        transform: rotateZ(11deg);
     }
 }
 
