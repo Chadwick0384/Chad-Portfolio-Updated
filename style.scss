@@ -1,133 +1,122 @@
 @import "./projects";
 @import "./techskills";
 @import "./animation";
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #hero {
-    background: rgb(233, 235, 238);
+  background: rgb(233, 235, 238);
 }
 
 body {
-    min-height: 90vh;
-    margin: 0;
-    padding: 0;
+  min-height: 90vh;
+  margin: 0;
+  padding: 0;
 }
 
-
 header {
-    min-height: 4vh;
-    background: rgb(49, 50, 51);
-    nav {
+  min-height: 4vh;
+  background: rgb(49, 50, 51);
+  nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     .bio {
-        display: inline-flex;
-        text-decoration: none;
-        font-size: 25px;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-family: 'Bangers', cursive;
-        }   
-    }   
+      display: inline-flex;
+      text-decoration: none;
+      font-size: 25px;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: "Bangers", cursive;
+    }
+  }
 }
-
 
 //navigation
 .nav-list {
-    justify-content: space-around;
-    display: flex;
-    width: 30%;
-    li {
-        list-style: none;
-        a {
-            letter-spacing: 3px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 17px;
-            color: white;
-            font-family: 'Bangers', cursive;
-        }
+  justify-content: space-around;
+  display: flex;
+  width: 30%;
+  li {
+    list-style: none;
+    a {
+      letter-spacing: 3px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+      color: white;
+      font-family: "Bangers", cursive;
     }
+  }
 }
 
 a:hover {
-    background-color: rgb(28, 98, 204);
+  background-color: rgb(28, 98, 204);
 }
-
-
-
-
-
 
 //mobile nav burger
 .burger {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .burger div {
-    width: 25px;
-    height: 5px;
-    margin: 5px;
-    background-color: white;
-    transition: all 0.3 ease;
+  width: 25px;
+  height: 5px;
+  margin: 5px;
+  background-color: white;
+  transition: all 0.3 ease;
 }
-
-
 
 //Main body
 .grid-layout {
-    display: grid;
-    grid-template-columns: 2.5fr 3.0fr;
-    justify-content: center;
-    min-height: 100vh;
+  display: grid;
+  grid-template-columns: 2.5fr 3fr;
+  justify-content: center;
+  min-height: 100vh;
 
-    #hero div {
-        max-width: 100%;
-        min-height: 100px;
-        padding: 0;
-        border: 0;
-        font: inherit;
-        display: block; 
-        } 
-    }
+  #hero div {
+    max-width: 100%;
+    min-height: 100px;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    display: block;
+  }
+}
 
-    .grid {
-        margin: auto;
-        p {
-            font-size: 25px;
-            word-spacing: 3px;
-            letter-spacing: 0.2rem;
-            line-height: 2.5rem;
-            text-align: center;
-            padding-bottom: 2px;
-            border: 2px solid black;
-            box-shadow: 10px 10px 5px grey;
-            width: 80%;
-            height: 100%;
-            background: #1970b8;
-            font-family: 'Pathway Gothic One', sans-serif;
-            padding: 15px;
-            
-        }
-    }
-    
-    .hero-p {
-        color: rgb(240, 230, 230);
-    }
+.grid {
+  margin: auto;
+  p {
+    font-size: 25px;
+    word-spacing: 3px;
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    padding-bottom: 2px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+    width: 80%;
+    height: 100%;
+    background: #1970b8;
+    font-family: "Pathway Gothic One", sans-serif;
+    padding: 15px;
+  }
+}
 
+.hero-p {
+  color: rgb(240, 230, 230);
+}
 
 /*Quote*/
-section{
+section {
   display: block;
   padding: 0;
   border: 0;
@@ -149,7 +138,8 @@ section{
   color: #fff;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -165,80 +155,76 @@ blockquote {
 }
 
 #quote blockquote cite::before {
-  content: '-';
+  content: "-";
 }
-
-
-
 
 //Mobile setup
 @media screen and (max-width: 768px) {
-    .grid-layout {
-        grid-template-columns: 1fr;
-        grid-gap: 1rem;
-    }
-    .grid p {
-        font-size: 14px;
-        word-spacing: 1.5px;
-        font-weight: bold;
-        line-height: 1.8rem;
-        text-align: center;
-        padding: 5px;
-        margin-bottom: 700px;
-        margin: auto;
-        margin-bottom: 60px;
-        width: 50%;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    .nav-list {
-        position: absolute;
-        right: 0px;
-        height: 70vh;
-        top: 8vh;
-        background-color: rgb(49, 50, 51);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav-list li {
-        opacity: 0;
-    }
-    .burger {
-        display: block;
-    }
+  .grid-layout {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  .grid p {
+    font-size: 14px;
+    word-spacing: 1.5px;
+    font-weight: bold;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 700px;
+    margin: auto;
+    margin-bottom: 60px;
+    width: 50%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    right: 0px;
+    height: 70vh;
+    top: 8vh;
+    background-color: rgb(49, 50, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-list li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
 
-    .nav-active {
-        transform: translateX(0%)
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
     }
-    
-    @keyframes navLinkFade {
-        from {
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0px);;
-        }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
     }
-}  
+  }
+}
 
 .toggle .line1 {
-    transform: rotate(-45deg translate(-5px,6px));
+  transform: rotate(-45deg translate(-5px, 6px));
 }
 
 .toggle .line2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-list {
-        width: 50%;
-    }
+  .nav-list {
+    width: 50%;
+  }
 }
-

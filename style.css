@@ -349,7 +349,7 @@ header nav .bio {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
 }
 
 .nav-list {
@@ -371,7 +371,7 @@ header nav .bio {
   font-weight: bold;
   font-size: 17px;
   color: white;
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
 }
 
 a:hover {
@@ -395,8 +395,8 @@ a:hover {
 .grid-layout {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2.5fr 3.0fr;
-      grid-template-columns: 2.5fr 3.0fr;
+  -ms-grid-columns: 2.5fr 3fr;
+      grid-template-columns: 2.5fr 3fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -429,7 +429,7 @@ a:hover {
   width: 80%;
   height: 100%;
   background: #1970b8;
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
   padding: 15px;
 }
 
@@ -460,7 +460,8 @@ section {
   color: #fff;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -476,7 +477,7 @@ blockquote {
 }
 
 #quote blockquote cite::before {
-  content: '-';
+  content: "-";
 }
 
 @media screen and (max-width: 768px) {
