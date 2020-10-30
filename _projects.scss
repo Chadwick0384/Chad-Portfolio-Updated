@@ -1,11 +1,14 @@
 //Projects Section
-.grid-projects {
+.grid-container {
   background: rgb(255, 255, 255);
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 4rem;
   font-family: museo-sans, Helvetica, sans-serif;
-  min-height: 100vh;
-  grid-gap: 5rem;
 }
 
 .projects-p {
@@ -28,7 +31,7 @@ h1 {
   color: black;
 }
 
-.grid-projects ul {
+.grid-item ul {
   list-style: none;
   margin: 0;
   font-size: 16px;
@@ -42,14 +45,15 @@ ul {
   font: inherit;
 }
 
-.grid-projects li {
+.grid-item li {
   width: 20%;
-  float: left;
   margin: 2%;
   background: #fff;
+  align-content: center;
+  justify-content: center;
 }
 
-.grid-projects a {
+.grid-item a {
   border: 1px solid #000000;
   display: block;
   background: rgb(49, 50, 51);
@@ -59,16 +63,10 @@ a {
   text-decoration: none;
 }
 
-.grid-projects img {
+.grid-item img {
   width: 100%;
-}
-
-img {
-  padding: 0;
-  border: 0;
-  font: inherit;
-  margin: 0;
-  vertical-align: baseline;
+  height: 100%;
+  object-fit: cover;
 }
 
 h4 {
@@ -82,7 +80,7 @@ h4 {
   font-size: 30px;
 }
 
-.grid-projects h4 {
+.grid-item h4 {
   font-size: 25px;
   font-weight: bold;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -97,7 +95,7 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
-  .grid-layout3 {
+  .grid-container {
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
@@ -107,13 +105,13 @@ h4 {
 }
 
 @media (max-width: 768px) {
-  .grid-projects h4 {
+  .grid-item h4 {
     font-size: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .grid-projects li {
+  .grid-item li {
     width: 80%;
     margin-left: 40px;
   }
