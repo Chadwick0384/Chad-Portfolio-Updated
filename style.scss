@@ -1,8 +1,8 @@
 @import "./projects";
 @import "./techskills";
-@import "./animation";
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@
 }
 
 #hero {
-  background: rgb(233, 235, 238);
+  background: rgb(212, 216, 221);
 }
 
 body {
@@ -78,9 +78,8 @@ a:hover {
 //Main body
 .grid-layout {
   display: grid;
-  grid-template-columns: 2.5fr 3fr;
-  justify-content: center;
-  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
 
   #hero div {
     max-width: 100%;
@@ -90,29 +89,34 @@ a:hover {
     font: inherit;
     display: block;
   }
+  .bio-pic {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .grid {
   margin: auto;
   p {
-    font-size: 25px;
-    word-spacing: 4px;
+    font-size: 15px;
+    font-weight: bolder;
+    word-spacing: 5px;
     letter-spacing: 0.2rem;
     line-height: 2.5rem;
     text-align: center;
     padding-bottom: 2px;
-    border: 2px solid black;
-    box-shadow: 10px 10px 5px grey;
-    width: 80%;
-    height: 100%;
-    background: #0e528a;
-    font-family: "Pathway Gothic One", sans-serif;
+    border: none;
+    box-shadow: 10px 10px 15px rgb(88, 85, 85);
+    width: 90%;
+    background: #e5e8ec;
+    font-family: "Roboto", sans-serif;
     padding: 15px;
   }
 }
 
 .hero-p {
-  color: rgb(240, 230, 230);
+  color: rgb(34, 31, 31);
 }
 
 /*Quote*/
@@ -161,20 +165,19 @@ blockquote {
 //Mobile setup
 @media screen and (max-width: 768px) {
   .grid-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: 15fr;
     grid-gap: 1rem;
   }
   .grid p {
-    font-size: 14px;
+    font-size: 12px;
     word-spacing: 1.5px;
-    font-weight: bold;
     line-height: 1.8rem;
     text-align: center;
     padding: 5px;
     margin-bottom: 700px;
     margin: auto;
     margin-bottom: 60px;
-    width: 50%;
+    width: 80%;
   }
   body {
     overflow-x: hidden;
