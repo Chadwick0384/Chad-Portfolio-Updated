@@ -374,6 +374,10 @@ blockquote {
         grid-template-columns: 15fr;
     grid-gap: 1rem;
   }
+  .bio-pic {
+    padding-top: 15px;
+    padding-right: 10px;
+  }
   .grid p {
     font-size: 12px;
     word-spacing: 1.5px;
