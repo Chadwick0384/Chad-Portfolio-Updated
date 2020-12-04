@@ -12,7 +12,7 @@
 }
 
 .projects-p {
-  color: rgb(250, 245, 245);
+  color: rgb(43, 41, 41);
   font-size: 17px;
   word-spacing: 2px;
   letter-spacing: 0.2rem;
@@ -28,7 +28,7 @@ h1 {
   font-size: 50px;
   font-family: "Bangers", cursive;
   padding-top: 70px;
-  color: black;
+  color: rgb(93, 124, 155);
 }
 
 .grid-item ul {
@@ -56,7 +56,7 @@ ul {
 .grid-item a {
   border: 1px solid #000000;
   display: block;
-  background: rgb(49, 50, 51);
+  background: rgb(255, 255, 255);
 }
 
 a {
@@ -91,9 +91,10 @@ h4 {
   align-items: center;
   justify-content: center;
   letter-spacing: 2px;
-  background: rgb(49, 50, 51);
+  background: rgb(93, 124, 155);
 }
 
+//Media
 @media screen and (max-width: 768px) {
   .grid-container {
     grid-template-columns: auto;

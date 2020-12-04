@@ -17,7 +17,7 @@
 }
 
 .projects-p {
-  color: #faf5f5;
+  color: #2b2929;
   font-size: 17px;
   word-spacing: 2px;
   letter-spacing: 0.2rem;
@@ -33,7 +33,7 @@ h1 {
   font-size: 50px;
   font-family: "Bangers", cursive;
   padding-top: 70px;
-  color: black;
+  color: #5d7c9b;
 }
 
 .grid-item ul {
@@ -64,7 +64,7 @@ ul {
 .grid-item a {
   border: 1px solid #000000;
   display: block;
-  background: #313233;
+  background: white;
 }
 
 a {
@@ -108,7 +108,7 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: 2px;
-  background: #313233;
+  background: #5d7c9b;
 }
 
 @media screen and (max-width: 768px) {
@@ -142,7 +142,7 @@ h4 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  min-height: 80vh;
+  min-height: 90vh;
   border: 1px solid black;
   background-color: #202020;
 }
@@ -158,7 +158,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-top: 250px;
+  margin-top: 300px;
 }
 
 .skill {
@@ -196,7 +196,8 @@ h4 {
 }
 
 #hero {
-  background: #d4d8dd;
+  background: url(./coffeelaptop.jpg);
+  background-size: cover;
 }
 
 body {
@@ -206,8 +207,8 @@ body {
 }
 
 header {
-  min-height: 4vh;
-  background: #313233;
+  min-height: 5vh;
+  background: #5d7c9b;
 }
 
 header nav {
@@ -226,7 +227,7 @@ header nav .bio {
   display: -ms-inline-flexbox;
   display: inline-flex;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -254,13 +255,13 @@ header nav .bio {
   letter-spacing: 3px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 25px;
   color: white;
   font-family: "Bangers", cursive;
 }
 
 a:hover {
-  background-color: #1c62cc;
+  background-color: #72a5f1;
 }
 
 .burger {
@@ -282,7 +283,7 @@ a:hover {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .grid-layout #hero div {
@@ -310,13 +311,11 @@ a:hover {
   word-spacing: 5px;
   letter-spacing: 0.2rem;
   line-height: 2.5rem;
-  text-align: center;
+  text-align: left;
   padding-bottom: 2px;
   border: none;
-  -webkit-box-shadow: 10px 10px 15px #585555;
-          box-shadow: 10px 10px 15px #585555;
   width: 90%;
-  background: #e5e8ec;
+  background: white;
   font-family: "Roboto", sans-serif;
   padding: 15px;
 }
@@ -334,7 +333,7 @@ section {
 }
 
 #quote {
-  background: #313233;
+  background: #5d7c9b;
   text-align: center;
 }
 
@@ -382,7 +381,7 @@ blockquote {
     font-size: 12px;
     word-spacing: 1.5px;
     line-height: 1.8rem;
-    text-align: center;
+    text-align: left;
     padding: 5px;
     margin-bottom: 700px;
     margin: auto;
@@ -397,7 +396,7 @@ blockquote {
     right: 0px;
     height: 70vh;
     top: 8vh;
-    background-color: #313233;
+    background-color: #5d7c9b;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -419,6 +418,9 @@ blockquote {
   .nav-list li {
     opacity: 0;
   }
+  header nav .bio {
+    font-size: 30px;
+  }
   .burger {
     display: block;
   }
@@ -429,8 +431,8 @@ blockquote {
   @-webkit-keyframes navLinkFade {
     from {
       opacity: 0;
-      -webkit-transform: translateX(50px);
-              transform: translateX(50px);
+      -webkit-transform: translateX(70px);
+              transform: translateX(70px);
     }
     to {
       opacity: 1;
@@ -441,8 +443,8 @@ blockquote {
   @keyframes navLinkFade {
     from {
       opacity: 0;
-      -webkit-transform: translateX(50px);
-              transform: translateX(50px);
+      -webkit-transform: translateX(70px);
+              transform: translateX(70px);
     }
     to {
       opacity: 1;
@@ -463,7 +465,7 @@ blockquote {
 
 @media screen and (max-width: 1024px) {
   .nav-list {
-    width: 50%;
+    width: 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */

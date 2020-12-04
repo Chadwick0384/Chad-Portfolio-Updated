@@ -11,7 +11,8 @@
 }
 
 #hero {
-  background: rgb(212, 216, 221);
+  background: url(./coffeelaptop.jpg);
+  background-size: cover;
 }
 
 body {
@@ -21,8 +22,8 @@ body {
 }
 
 header {
-  min-height: 4vh;
-  background: rgb(49, 50, 51);
+  min-height: 5vh;
+  background: rgb(93, 124, 155);
   nav {
     display: flex;
     justify-content: space-around;
@@ -30,10 +31,10 @@ header {
     .bio {
       display: inline-flex;
       text-decoration: none;
-      font-size: 25px;
+      font-size: 40px;
       justify-content: center;
       align-items: center;
-      color: white;
+      color: rgb(255, 255, 255);
       font-family: "Bangers", cursive;
     }
   }
@@ -50,15 +51,15 @@ header {
       letter-spacing: 3px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 17px;
-      color: white;
+      font-size: 25px;
+      color: rgb(255, 255, 255);
       font-family: "Bangers", cursive;
     }
   }
 }
 
 a:hover {
-  background-color: rgb(28, 98, 204);
+  background-color: rgb(114, 165, 241);
 }
 
 //mobile nav burger
@@ -71,7 +72,7 @@ a:hover {
   width: 25px;
   height: 5px;
   margin: 5px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   transition: all 0.3 ease;
 }
 
@@ -79,7 +80,7 @@ a:hover {
 .grid-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 90vh;
+  min-height: 100vh;
 
   #hero div {
     max-width: 100%;
@@ -104,12 +105,12 @@ a:hover {
     word-spacing: 5px;
     letter-spacing: 0.2rem;
     line-height: 2.5rem;
-    text-align: center;
+    text-align: left;
     padding-bottom: 2px;
     border: none;
-    box-shadow: 10px 10px 15px rgb(88, 85, 85);
+
     width: 90%;
-    background: #e5e8ec;
+    background: rgb(255, 255, 255);
     font-family: "Roboto", sans-serif;
     padding: 15px;
   }
@@ -128,7 +129,7 @@ section {
 }
 
 #quote {
-  background: rgb(49, 50, 51);
+  background: rgb(93, 124, 155);
   text-align: center;
 }
 
@@ -176,7 +177,7 @@ blockquote {
     font-size: 12px;
     word-spacing: 1.5px;
     line-height: 1.8rem;
-    text-align: center;
+    text-align: left;
     padding: 5px;
     margin-bottom: 700px;
     margin: auto;
@@ -191,7 +192,7 @@ blockquote {
     right: 0px;
     height: 70vh;
     top: 8vh;
-    background-color: rgb(49, 50, 51);
+    background-color: rgb(93, 124, 155);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,6 +203,11 @@ blockquote {
   .nav-list li {
     opacity: 0;
   }
+
+  header nav .bio {
+    font-size: 30px;
+  }
+
   .burger {
     display: block;
   }
@@ -210,10 +216,11 @@ blockquote {
     transform: translateX(0%);
   }
 
+  //Animate hamburger nav
   @keyframes navLinkFade {
     from {
       opacity: 0;
-      transform: translateX(50px);
+      transform: translateX(70px);
     }
     to {
       opacity: 1;
@@ -232,6 +239,6 @@ blockquote {
 
 @media screen and (max-width: 1024px) {
   .nav-list {
-    width: 50%;
+    width: 70%;
   }
 }
