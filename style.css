@@ -140,10 +140,9 @@ h4 {
   background-image: url(./napoleon-dynamite-wallpaper-generator.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   min-height: 90vh;
-  border: 1px solid black;
+  border: 1px solid #2b2929;
   background-color: #202020;
 }
 
