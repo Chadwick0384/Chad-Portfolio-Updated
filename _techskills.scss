@@ -2,14 +2,6 @@
 .about {
   min-height: 80vh;
   background-color: #242736;
-  .fa-signature,
-  .fa-tv,
-  .fa-spotify,
-  .fa-newspaper {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
 }
 
 .grid-p {
@@ -73,7 +65,8 @@ hr {
 .fa-wordpress,
 .fa-figma,
 .fa-github,
-.fa-npm {
+.fa-npm,
+.fa-aws {
   color: white;
 }
 

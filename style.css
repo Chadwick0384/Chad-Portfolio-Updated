@@ -147,21 +147,6 @@ h4 {
   background-color: #242736;
 }
 
-.about .fa-signature,
-.about .fa-tv,
-.about .fa-spotify,
-.about .fa-newspaper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .grid-p {
   color: white;
   font-size: 1rem;
@@ -242,7 +227,8 @@ hr {
 .fa-wordpress,
 .fa-figma,
 .fa-github,
-.fa-npm {
+.fa-npm,
+.fa-aws {
   color: white;
 }
 
