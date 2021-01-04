@@ -1,26 +1,80 @@
 //Tech Skills Section
-.grid-layout2 {
-  background-image: url(./napoleon-dynamite-wallpaper-generator.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 90vh;
-  border: 1px solid rgb(43, 41, 41);
-  background-color: rgb(32, 32, 32);
+.about {
+  min-height: 80vh;
+  background-color: #242736;
+  .fa-signature,
+  .fa-tv,
+  .fa-spotify,
+  .fa-newspaper {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 }
 
-.grid2 {
-  display: flex;
-  justify-content: space-evenly;
+.grid-p {
+  color: white;
+  font-size: 1rem;
   align-items: center;
-  width: 100%;
-  margin-top: 300px;
+  justify-content: center;
+  padding-top: 1rem;
+  display: flexbox;
 }
 
-.skill {
+.about-p {
+  color: white;
+  font-size: 1rem;
   display: flex;
-  width: 100px;
-  height: 100px;
+  align-items: center;
+  justify-content: center;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.about-title {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  padding: 1.5rem;
+}
+
+hr {
+  width: 40%;
+  height: 1px;
+  margin-bottom: 55px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  border-width: 2px;
+  border-color: #a54821;
+  border-bottom: #a54821;
+}
+
+.grid-container1 {
+  background: #242736;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding-left: 15rem;
+  width: 100%;
+  margin: 0, auto;
+  row-gap: 5rem;
+  column-gap: 3rem;
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.fa-html5,
+.fa-css3,
+.fa-js,
+.fa-sass,
+.fa-react,
+.fa-wordpress,
+.fa-figma,
+.fa-github,
+.fa-npm {
+  color: white;
 }
 
 //mobile
@@ -38,5 +92,12 @@
     width: 40px;
     height: 40px;
     display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container1 {
+    grid-template-columns: 1fr;
+    padding-left: 10rem;
   }
 }

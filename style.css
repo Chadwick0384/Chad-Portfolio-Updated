@@ -16,6 +16,22 @@
   font-family: museo-sans, Helvetica, sans-serif;
 }
 
+.about-title2 {
+  color: #020202;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  margin-top: 25px;
+  padding: 1.5rem;
+}
+
 .projects-p {
   color: #2b2929;
   font-size: 17px;
@@ -24,16 +40,6 @@
   line-height: 2rem;
   text-align: center;
   padding: 25px;
-}
-
-h1 {
-  text-align: center;
-  background: white;
-  margin: auto;
-  font-size: 50px;
-  font-family: "Bangers", cursive;
-  padding-top: 70px;
-  color: #5d7c9b;
 }
 
 .grid-item ul {
@@ -108,7 +114,7 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: 2px;
-  background: #5d7c9b;
+  background: #242736;
 }
 
 @media screen and (max-width: 768px) {
@@ -136,36 +142,108 @@ h4 {
   }
 }
 
-.grid-layout2 {
-  background-image: url(./napoleon-dynamite-wallpaper-generator.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 90vh;
-  border: 1px solid #2b2929;
-  background-color: #202020;
+.about {
+  min-height: 80vh;
+  background-color: #242736;
 }
 
-.grid2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.about .fa-signature,
+.about .fa-tv,
+.about .fa-spotify,
+.about .fa-newspaper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  margin-top: 300px;
-}
-
-.skill {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100px;
-  height: 100px;
+}
+
+.grid-p {
+  color: white;
+  font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+  display: flexbox;
+}
+
+.about-p {
+  color: white;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.about-title {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  padding: 1.5rem;
+}
+
+hr {
+  width: 40%;
+  height: 1px;
+  margin-bottom: 55px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  border-width: 2px;
+  border-color: #a54821;
+  border-bottom: #a54821;
+}
+
+.grid-container1 {
+  background: #242736;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding-left: 15rem;
+  width: 100%;
+  margin: 0, auto;
+  row-gap: 5rem;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.fa-html5,
+.fa-css3,
+.fa-js,
+.fa-sass,
+.fa-react,
+.fa-wordpress,
+.fa-figma,
+.fa-github,
+.fa-npm {
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -184,6 +262,14 @@ h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container1 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-left: 10rem;
   }
 }
 
@@ -207,7 +293,7 @@ body {
 
 header {
   min-height: 5vh;
-  background: #5d7c9b;
+  background: #242736;
 }
 
 header nav {
@@ -332,7 +418,7 @@ section {
 }
 
 #quote {
-  background: #5d7c9b;
+  background: #242736;
   text-align: center;
 }
 
@@ -395,7 +481,7 @@ blockquote {
     right: 0px;
     height: 70vh;
     top: 8vh;
-    background-color: #5d7c9b;
+    background-color: #242736;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
