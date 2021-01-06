@@ -260,9 +260,9 @@ hr {
 
 @media screen and (max-width: 768px) {
   .grid-container1 {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    padding-left: 14rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding-left: 10rem;
   }
 }
 
