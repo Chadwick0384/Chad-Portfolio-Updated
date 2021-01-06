@@ -262,7 +262,7 @@ hr {
   .grid-container1 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    padding-left: 10rem;
+    padding-left: 8rem;
   }
 }
 
